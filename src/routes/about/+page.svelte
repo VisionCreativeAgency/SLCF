@@ -10,7 +10,21 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
-<main class="-mt-20">
+<svelte:head>
+	<title>About Us | Somaliland Chess Federation</title>
+	<meta
+		name="description"
+		content="Learn about the Somaliland Chess Federation's mission, leadership, and work to grow chess culture across Somaliland."
+	/>
+	<meta property="og:title" content="About Us | Somaliland Chess Federation" />
+	<meta
+		property="og:description"
+		content="Learn about the Somaliland Chess Federation's mission, leadership, and work to grow chess culture across Somaliland."
+	/>
+	<meta property="og:url" content="https://somalilandchessfederation.com/about" />
+</svelte:head>
+
+<main class="md:-mt-20 -mt-14">
 	<AboutHero />
 	<MissionVision />
 	<WhatWeDo />

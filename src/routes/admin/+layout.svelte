@@ -36,6 +36,10 @@
 	}
 </script>
 
+<svelte:head>
+	<meta name="robots" content="noindex, nofollow" />
+</svelte:head>
+
 <div class="admin-shell">
 	<!-- Desktop sidebar -->
 	<aside class="sidebar">

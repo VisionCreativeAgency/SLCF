@@ -21,6 +21,24 @@
 	{#if post.excerpt}
 		<meta name="description" content={post.excerpt} />
 	{/if}
+
+	<meta property="og:title" content="{post.title} — SLCF News" />
+	{#if post.excerpt}
+		<meta property="og:description" content={post.excerpt} />
+	{/if}
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://somalilandchessfederation.com/news/{post.slug}" />
+	{#if post.coverImage}
+		<meta property="og:image" content={post.coverImage} />
+	{:else}
+		<meta property="og:image" content="/seo/og-image.jpg" />
+	{/if}
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="{post.title} — SLCF News" />
+	{#if post.excerpt}
+		<meta name="twitter:description" content={post.excerpt} />
+	{/if}
 </svelte:head>
 
 <article>

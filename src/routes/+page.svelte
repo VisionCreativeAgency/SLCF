@@ -14,6 +14,21 @@
 	let { data }: { data: PageData } = $props();
 </script>
 
+<svelte:head>
+	<title>Somaliland Chess Federation</title>
+	<meta
+		name="description"
+		content="The official Somaliland Chess Federation — tournaments, top players, member clubs, and the latest chess news across Somaliland."
+	/>
+	<meta property="og:title" content="Somaliland Chess Federation" />
+	<meta
+		property="og:description"
+		content="The official Somaliland Chess Federation — tournaments, top players, member clubs, and the latest chess news across Somaliland."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://somalilandchessfederation.com" />
+</svelte:head>
+
 <main class="mt-6">
 	<HomeHero />
 	<StatsBar />
